@@ -1,19 +1,4 @@
-class Product{
-    constructor(name){
-        this.name = name;
-    }
+import App from './demo/App';
 
-    init(){
-        alert("init")
-        alert(this.name)
-    }
-}
-
-class Creator{
-    static create(name){
-        return new Product(name)
-    }
-}
-
-let p = Creator.create("Lily")
-p.init()
+let app = new App("app");
+app.init();
